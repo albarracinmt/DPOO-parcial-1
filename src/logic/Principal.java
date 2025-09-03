@@ -18,7 +18,7 @@ public class Principal {
         
         
         {
-            if (pesokilo >= 60 && pesokilo <= 110 && alturacenti >= 160 && alturacenti <= 195 && edad > 15)
+            if (pesokilo>= 60 && pesokilo <= 110 && alturacenti >= 160 && alturacenti <= 195 && edad > 15)
             
             
             {
@@ -29,7 +29,7 @@ public class Principal {
             
             
             {
-                System.out.println("Datos fuera de rango para el  hombre");
+                System.out.println("Atributos fuera de rango para el  hombre");
             }
             
         	//Si se ecribe hombre, y se cumple la condicion de sus atributos,  o si se escribe hombre y no se cumple la condicion de sus atributos, o si por string se recibe cualquir cosa que no sea hombre o mujer.
@@ -38,17 +38,17 @@ public class Principal {
         } else if (sexo.equals("mujer")) 
         
         {
-            if (pesokilo >= 40 && pesokilo <= 80 && alturacenti >= 140 && alturacenti <= 180 && edad > 15)
+            if (pesokilo>=40 && pesokilo <= 80 && alturacenti >= 140 && alturacenti<= 180 && edad > 15)
             
             
             {
-                tmb = 447.593 + (9.247  * pesokilo) + (3.098 * alturacenti) -  (4.33 * edad );
+                tmb =  447.593 + (9.247  * pesokilo) + (3.098 * alturacenti) -  (4.33* edad );
                 
                  System.out.println("La Tmb de la mujer es:" + tmb);
                 
                 
             } else {
-                System.out.println("Datos fuera de rango para la mujer.");
+                System.out.println("Atributos fuera de rango para la mujer.");
                 
                 
                 
